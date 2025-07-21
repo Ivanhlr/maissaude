@@ -1,0 +1,108 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+/* Barra vermelha no topo */
+.top-bar {
+  background-color: #e60000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Headline responsiva */
+#dov {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#dov img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Comentários */
+.comments-section {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.comment-content p {
+  margin: 5px 0;
+}
+
+.comment-content strong {
+  color: #1877f2; /* Azul estilo Facebook */
+}
+
+.meta {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 5px;
+  }
+
+  .comment {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .top-bar {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
